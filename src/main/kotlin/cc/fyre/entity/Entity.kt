@@ -63,16 +63,7 @@ abstract class Entity(var name: String,internal var location: Location,@Transien
     companion object {
 
         const val DISTANCE = 1600.0
-        const val MOVE_METADATA = "ENTITY_NAME"
 
-        private val BLOCK_HEIGHTS = hashMapOf(
-                "SLAB" to 0.5,
-                "TRAPDOOR" to 0.2
-        )
-
-        fun getBlockHeight(type: Material):Double? {
-            return BLOCK_HEIGHTS.entries.firstOrNull{type.name.endsWith(it.key,true)}?.value
-        }
     }
 
 }

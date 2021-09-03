@@ -5,12 +5,6 @@ import cc.fyre.entity.EntityVisibility
 import org.bukkit.event.Event
 import org.bukkit.event.HandlerList
 
-/**
- * @project carnage
- *
- * @date 03/21/21
- * @author xanderume@gmail.com
- */
 class NPCNameTagStateEvent(val npc: NPC, val new: EntityVisibility) : Event() {
 
     override fun getHandlers(): HandlerList {

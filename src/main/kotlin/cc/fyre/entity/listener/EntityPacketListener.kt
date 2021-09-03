@@ -12,12 +12,6 @@ import com.comphenix.protocol.wrappers.EnumWrappers
 import org.bukkit.Bukkit
 import org.bukkit.event.Listener
 
-/**
- * @project carnage
- *
- * @date 04/01/21
- * @author xanderume@gmail.com
- */
 object EntityPacketListener : PacketAdapter(EntityHandler.plugin,PacketType.Play.Client.USE_ENTITY),Listener {
 
     //TODO add cooldown

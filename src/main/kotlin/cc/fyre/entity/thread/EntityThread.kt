@@ -47,16 +47,16 @@ object EntityThread : Thread("Shard - Entity Thread") {
                 if (!visible) {
 
                     if (!entity.viewers.contains(player.uniqueId)) {
-                        return
+                        continue
                     }
 
                     entity.viewers.remove(player.uniqueId)
                     entity.sendDestroyPacket(player)
-                    return
+                    continue
                 }
 
                 if (entity.viewers.contains(player.uniqueId)) {
-                    return
+                    continue
                 }
 
                 entity.viewers.add(player.uniqueId)
